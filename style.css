@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Patrick Hand";
+  src: url("Patrick Hand.ttf") format("truetype");
+}
+body {
+  font-size: 15pt;
+  font-family: Patrick Hand;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#trash{
+  width:30%;
+  background: red;
+  color:white;
+  position: fixed;
+  bottom:0;
+  right:0;
+  margin:10px;
+  padding:10px;
+  text-align: center;
+}
+.category{
+  width:33%;
+  height:100%;
+  text-align: center;
+  min-height: 100%;
+  background: #FCA311;
+  transition: all 1s ease;
+}
+.special{
+  width: 30%;
+  position: fixed;
+  bottom:0;
+  left:0;
+  text-align: center;
+}
+.category > div:first-child{
+  background: #14213D;
+  color:white;
+  padding:5%;
+}
+.list{
+  display:flex;
+  height:100%;
+  flex-direction: column;
+  margin:5%;
+  min-height:450px;
+}
+.note{
+  margin:10px;
+  padding:10px;
+  background: palegreen;
+  touch-action: none;
+  user-select: none;
+  outline:none;
+  z-index: 2;
+}
+@media screen and (max-width: 800px){
+  body{
+    flex-direction: column;
+  }
+  .category{
+    width: 100%;
+  }
+  #trash{
+    height:10%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .special{
+    width: 60%;
+  }
+}
