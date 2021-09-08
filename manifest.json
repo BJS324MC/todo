@@ -1,0 +1,14 @@
+{
+  "name":"To Do List",
+  "description": "An app to put down your notes...That's it.",
+  "shortname":"ToDoList",
+  "icons":[{
+    "src":"icon.jpg",
+    "sizes":"562x562",
+    "type":"image/jpg"
+  }],
+  "start_url":"index.html",
+  "display":"standalone",
+  "background_color":"white",
+  "theme_color":"palegreen"
+}
