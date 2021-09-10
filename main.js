@@ -1,4 +1,4 @@
-function onMove(event) {
+try{function onMove(event) {
   const target = event.target;
 
   const dataX = target.getAttribute('data-x');
@@ -121,4 +121,4 @@ if ("serviceWorker" in navigator) {
       .then(res => console.log("service worker registered"))
       .catch(err => console.log("service worker not registered", err))
   })
-}
+}}catct(err){};
